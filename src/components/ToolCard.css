@@ -1,0 +1,74 @@
+.tool-card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 100%;
+    position: relative;
+    transition: all var(--transition-fast);
+    background: #000;
+    border: 1px dotted var(--panel-border);
+}
+
+.tool-card:hover {
+    border-color: var(--primary-glow);
+    background: rgba(51, 255, 0, 0.05);
+}
+
+.tool-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    border-bottom: 1px dotted var(--panel-border);
+    padding-bottom: 5px;
+}
+
+.tool-category {
+    color: var(--secondary-glow);
+}
+
+.tool-id {
+    font-family: var(--font-mono);
+}
+
+.tool-card-body {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.tool-name {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--primary-glow);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+}
+
+.terminal-icon {
+    color: var(--text-secondary);
+}
+
+.tool-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    font-family: var(--font-mono);
+}
+
+.tool-card-footer {
+    margin-top: auto;
+}
+
+.launch-btn {
+    width: 100%;
+    font-size: 0.85rem;
+}
+
+.tool-card:hover .launch-btn {
+    background: var(--primary-glow);
+    color: #000;
+}

@@ -1,0 +1,130 @@
+.home-dashboard {
+    animation: fadeIn var(--transition-normal);
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner-panel {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+    border: 1px dashed var(--primary-muted);
+}
+
+.ascii-banner {
+    color: var(--primary-glow);
+    font-size: 0.6vw;
+    line-height: 1.2;
+    text-shadow: 0 0 5px var(--primary-muted);
+    font-family: var(--font-mono);
+    margin-bottom: 15px;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+}
+
+@media (min-width: 1200px) {
+    .ascii-banner {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ascii-banner {
+        display: none;
+    }
+}
+
+.banner-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.sys-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .sys-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cmd-panel {
+    padding: 15px;
+    background: #000;
+}
+
+.cmd-prompt {
+    color: var(--secondary-glow);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.cmd-input-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: var(--primary-glow);
+    flex-wrap: wrap;
+}
+
+.inline-input {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--primary-glow) !important;
+    color: var(--text-accent);
+    padding: 0 5px;
+    width: auto;
+    min-width: 150px;
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.inline-input:focus {
+    box-shadow: none !important;
+    border-bottom: 2px solid var(--text-accent) !important;
+}
+
+.cmd-prefix,
+.cmd-suffix,
+.cmd-flag {
+    white-space: pre;
+}
+
+.cmd-flag {
+    color: var(--secondary-glow);
+}
+
+.results-info {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--danger-glow);
+}
+
+.no-results h3 {
+    color: var(--danger-glow);
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: var(--text-secondary);
+}
