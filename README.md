@@ -134,6 +134,9 @@ Do not use it on systems without proper permission.
 Tamilselvan
 Cybersecurity Student | Bug Bounty Learner
 
+Amanalingeswaran
+Cybersecurity Student | javascript Learner
+
 ---
 
 ## ⭐ Support
